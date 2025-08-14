@@ -250,11 +250,11 @@ local script = G2L["13"];
 	local hum = character:WaitForChild("HumanoidRootPart")
 	local lastPosition = hum.Position
 	
-	local posssss
 	local splendid = false
 	
 	button.Activated:Connect(function()
 		if character then
+			lastPosition = hum.Position
 			splendid = true
 		end
 	end)
