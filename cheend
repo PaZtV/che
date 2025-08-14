@@ -1,207 +1,228 @@
--- Generated using RoadToGlory's Converter v1.1 (RoadToGlory#9879)
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
 
--- Instances:
+-- Instances: 26 | Scripts: 3 | Modules: 0 | Tags: 0
+local G2L = {};
 
-local Converted = {
-	["_gui"] = Instance.new("ScreenGui");
-	["_Main"] = Instance.new("Frame");
-	["_UIAspectRatioConstraint"] = Instance.new("UIAspectRatioConstraint");
-	["_UICorner"] = Instance.new("UICorner");
-	["_Header"] = Instance.new("Frame");
-	["_Title"] = Instance.new("TextLabel");
-	["_UIPadding"] = Instance.new("UIPadding");
-	["_UICorner1"] = Instance.new("UICorner");
-	["_UIGradient"] = Instance.new("UIGradient");
-	["_UICorner2"] = Instance.new("UICorner");
-	["_SubText"] = Instance.new("TextLabel");
-	["_UIPadding1"] = Instance.new("UIPadding");
-	["_Logo"] = Instance.new("ImageLabel");
-	["_Close"] = Instance.new("ImageButton");
-	["_UICorner3"] = Instance.new("UICorner");
-	["_UIStroke"] = Instance.new("UIStroke");
-	["_UIStroke1"] = Instance.new("UIStroke");
-	["_Minimized"] = Instance.new("ImageButton");
-	["_UICorner4"] = Instance.new("UICorner");
-	["_UIStroke2"] = Instance.new("UIStroke");
-	["_UIGradient1"] = Instance.new("UIGradient");
-	["_ImageLabel"] = Instance.new("ImageLabel");
-	["_UIAspectRatioConstraint1"] = Instance.new("UIAspectRatioConstraint");
-	["_drag"] = Instance.new("LocalScript");
-	["_drag1"] = Instance.new("LocalScript");
-	["_toggle"] = Instance.new("LocalScript");
-}
-
--- Properties:
-
-Converted["_gui"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-Converted["_gui"].Name = "gui"
-Converted["_gui"].Parent = game:GetService("CoreGui")
-
-Converted["_Main"].BackgroundColor3 = Color3.fromRGB(9.000000413507223, 0, 22.000000588595867)
-Converted["_Main"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Main"].BorderSizePixel = 0
-Converted["_Main"].Position = UDim2.new(0.487266541, 0, 0.381633341, 0)
-Converted["_Main"].Size = UDim2.new(0.273597836, 0, 0.376884431, 0)
-Converted["_Main"].Name = "Main"
-Converted["_Main"].Parent = Converted["_gui"]
-
-Converted["_UIAspectRatioConstraint"].AspectRatio = 1.3333333730697632
-Converted["_UIAspectRatioConstraint"].Parent = Converted["_Main"]
-
-Converted["_UICorner"].Parent = Converted["_Main"]
-
-Converted["_Header"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Header"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Header"].BorderSizePixel = 0
-Converted["_Header"].Size = UDim2.new(1, 0, 0.163666651, 0)
-Converted["_Header"].Name = "Header"
-Converted["_Header"].Parent = Converted["_Main"]
-
-Converted["_Title"].Font = Enum.Font.ArialBold
-Converted["_Title"].Text = "Cheend menu (SS)"
-Converted["_Title"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Title"].TextDirection = Enum.TextDirection.RightToLeft
-Converted["_Title"].TextScaled = true
-Converted["_Title"].TextSize = 14
-Converted["_Title"].TextWrapped = true
-Converted["_Title"].TextXAlignment = Enum.TextXAlignment.Left
-Converted["_Title"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Title"].BackgroundTransparency = 1
-Converted["_Title"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Title"].BorderSizePixel = 0
-Converted["_Title"].Position = UDim2.new(0.0949999988, 0, -6.21539357e-07, 0)
-Converted["_Title"].Size = UDim2.new(0.904999971, 0, 0.855396867, 0)
-Converted["_Title"].Name = "Title"
-Converted["_Title"].Parent = Converted["_Header"]
-
-Converted["_UIPadding"].PaddingBottom = UDim.new(0, 4)
-Converted["_UIPadding"].PaddingRight = UDim.new(0, 4)
-Converted["_UIPadding"].PaddingTop = UDim.new(0, 4)
-Converted["_UIPadding"].Parent = Converted["_Title"]
-
-Converted["_UICorner1"].Parent = Converted["_Title"]
-
-Converted["_UIGradient"].Color = ColorSequence.new{
-	ColorSequenceKeypoint.new(0, Color3.fromRGB(53.00000064074993, 0, 62.00000010430813)),
-	ColorSequenceKeypoint.new(1, Color3.fromRGB(9.000000413507223, 0, 22.000000588595867))
-}
-Converted["_UIGradient"].Parent = Converted["_Header"]
-
-Converted["_UICorner2"].Parent = Converted["_Header"]
-
-Converted["_SubText"].Font = Enum.Font.SourceSans
-Converted["_SubText"].Text = "Premium key"
-Converted["_SubText"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_SubText"].TextScaled = true
-Converted["_SubText"].TextSize = 14
-Converted["_SubText"].TextTransparency = 0.8500000238418579
-Converted["_SubText"].TextWrapped = true
-Converted["_SubText"].TextXAlignment = Enum.TextXAlignment.Left
-Converted["_SubText"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_SubText"].BackgroundTransparency = 1
-Converted["_SubText"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_SubText"].BorderSizePixel = 0
-Converted["_SubText"].Position = UDim2.new(0, 0, 0.71283102, 0)
-Converted["_SubText"].Size = UDim2.new(0.49999997, 0, 0.287169188, 0)
-Converted["_SubText"].Name = "SubText"
-Converted["_SubText"].Parent = Converted["_Header"]
-
-Converted["_UIPadding1"].PaddingLeft = UDim.new(0, 4)
-Converted["_UIPadding1"].Parent = Converted["_SubText"]
-
-Converted["_Logo"].Image = "rbxassetid://73047193591184"
-Converted["_Logo"].ImageContent = Content
-Converted["_Logo"].ScaleType = Enum.ScaleType.Fit
-Converted["_Logo"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Logo"].BackgroundTransparency = 1
-Converted["_Logo"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Logo"].BorderSizePixel = 0
-Converted["_Logo"].Size = UDim2.new(0.0949999914, 0, 0.71283102, 0)
-Converted["_Logo"].Name = "Logo"
-Converted["_Logo"].Parent = Converted["_Header"]
-
-Converted["_Close"].Image = "rbxassetid://132261474823036"
-Converted["_Close"].ImageColor3 = Color3.fromRGB(217.0000022649765, 0, 255)
-Converted["_Close"].ImageContent = Content
-Converted["_Close"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Close"].BackgroundTransparency = 1
-Converted["_Close"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Close"].BorderSizePixel = 0
-Converted["_Close"].Position = UDim2.new(0.889999986, 0, 0.0810000002, 0)
-Converted["_Close"].Size = UDim2.new(0.100000001, 0, 0.814664066, 0)
-Converted["_Close"].Name = "Close"
-Converted["_Close"].Parent = Converted["_Header"]
-
-Converted["_UICorner3"].Parent = Converted["_Close"]
-
-Converted["_UIStroke"].Color = Color3.fromRGB(217.0000022649765, 0, 255)
-Converted["_UIStroke"].Thickness = 0.8999999761581421
-Converted["_UIStroke"].Parent = Converted["_Close"]
-
-Converted["_UIStroke1"].Color = Color3.fromRGB(217.00001746416092, 0, 255)
-Converted["_UIStroke1"].Thickness = 0.8999999761581421
-Converted["_UIStroke1"].Parent = Converted["_Main"]
-
-Converted["_Minimized"].HoverImage = "rbxassetid://73047193591184"
-Converted["_Minimized"].HoverImageContent = Content
-Converted["_Minimized"].Image = "rbxassetid://73047193591184"
-Converted["_Minimized"].ImageContent = Content
-Converted["_Minimized"].ScaleType = Enum.ScaleType.Fit
-Converted["_Minimized"].AutoButtonColor = false
-Converted["_Minimized"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Minimized"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Minimized"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Minimized"].BorderSizePixel = 0
-Converted["_Minimized"].Position = UDim2.new(0.502546668, 0, 0.263819098, 0)
-Converted["_Minimized"].Size = UDim2.new(0.0341997258, 0, 0.0628140718, 0)
-Converted["_Minimized"].Visible = false
-Converted["_Minimized"].Name = "Minimized"
-Converted["_Minimized"].Parent = Converted["_gui"]
-
-Converted["_UICorner4"].Parent = Converted["_Minimized"]
-
-Converted["_UIStroke2"].Color = Color3.fromRGB(217.00001746416092, 0, 255)
-Converted["_UIStroke2"].Thickness = 0.8999999761581421
-Converted["_UIStroke2"].Parent = Converted["_Minimized"]
-
-Converted["_UIGradient1"].Color = ColorSequence.new{
-	ColorSequenceKeypoint.new(0, Color3.fromRGB(53.00000064074993, 0, 62.00000010430813)),
-	ColorSequenceKeypoint.new(1, Color3.fromRGB(9.000000413507223, 0, 22.000000588595867))
-}
-Converted["_UIGradient1"].Parent = Converted["_Minimized"]
-
-Converted["_ImageLabel"].Image = "rbxassetid://73047193591184"
-Converted["_ImageLabel"].ImageContent = Content
-Converted["_ImageLabel"].ScaleType = Enum.ScaleType.Fit
-Converted["_ImageLabel"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_ImageLabel"].BackgroundTransparency = 1
-Converted["_ImageLabel"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_ImageLabel"].BorderSizePixel = 0
-Converted["_ImageLabel"].Size = UDim2.new(1, 0, 1, 0)
-Converted["_ImageLabel"].Parent = Converted["_Minimized"]
-
-Converted["_UIAspectRatioConstraint1"].Parent = Converted["_Minimized"]
-
--- Fake Module Scripts:
-
-local fake_module_scripts = {}
+-- StarterGui.gui
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["Name"] = [[gui]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 
 
--- Fake Local Scripts:
+-- StarterGui.gui.Main
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(10, 0, 23);
+G2L["2"]["Size"] = UDim2.new(0.2736, 0, 0.37688, 0);
+G2L["2"]["Position"] = UDim2.new(0.48727, 0, 0.38163, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Name"] = [[Main]];
 
-local function BKWD_fake_script() -- Fake Script: StarterGui.gui.Minimized.drag
-    local script = Instance.new("LocalScript")
-    script.Name = "drag"
-    script.Parent = Converted["_Minimized"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
 
+-- StarterGui.gui.Main.UIAspectRatioConstraint
+G2L["3"] = Instance.new("UIAspectRatioConstraint", G2L["2"]);
+G2L["3"]["AspectRatio"] = 1.33333;
+
+
+-- StarterGui.gui.Main.UICorner
+G2L["4"] = Instance.new("UICorner", G2L["2"]);
+
+
+
+-- StarterGui.gui.Main.Header
+G2L["5"] = Instance.new("Frame", G2L["2"]);
+G2L["5"]["BorderSizePixel"] = 0;
+G2L["5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5"]["Size"] = UDim2.new(1, 0, 0.16367, 0);
+G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5"]["Name"] = [[Header]];
+
+
+-- StarterGui.gui.Main.Header.Title
+G2L["6"] = Instance.new("TextLabel", G2L["5"]);
+G2L["6"]["TextWrapped"] = true;
+G2L["6"]["BorderSizePixel"] = 0;
+G2L["6"]["TextSize"] = 14;
+G2L["6"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["6"]["TextScaled"] = true;
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["TextDirection"] = Enum.TextDirection.RightToLeft;
+G2L["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["BackgroundTransparency"] = 1;
+G2L["6"]["Size"] = UDim2.new(0.905, 0, 0.8554, 0);
+G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["Text"] = [[Cheend menu (SS)]];
+G2L["6"]["Name"] = [[Title]];
+G2L["6"]["Position"] = UDim2.new(0.095, 0, -0, 0);
+
+
+-- StarterGui.gui.Main.Header.Title.UIPadding
+G2L["7"] = Instance.new("UIPadding", G2L["6"]);
+G2L["7"]["PaddingTop"] = UDim.new(0, 4);
+G2L["7"]["PaddingRight"] = UDim.new(0, 4);
+G2L["7"]["PaddingBottom"] = UDim.new(0, 4);
+
+
+-- StarterGui.gui.Main.Header.Title.UICorner
+G2L["8"] = Instance.new("UICorner", G2L["6"]);
+
+
+
+-- StarterGui.gui.Main.Header.UIGradient
+G2L["9"] = Instance.new("UIGradient", G2L["5"]);
+G2L["9"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(54, 0, 63)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(10, 0, 23))};
+
+
+-- StarterGui.gui.Main.Header.UICorner
+G2L["a"] = Instance.new("UICorner", G2L["5"]);
+
+
+
+-- StarterGui.gui.Main.Header.SubText
+G2L["b"] = Instance.new("TextLabel", G2L["5"]);
+G2L["b"]["TextWrapped"] = true;
+G2L["b"]["BorderSizePixel"] = 0;
+G2L["b"]["TextSize"] = 14;
+G2L["b"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["b"]["TextTransparency"] = 0.85;
+G2L["b"]["TextScaled"] = true;
+G2L["b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b"]["BackgroundTransparency"] = 1;
+G2L["b"]["Size"] = UDim2.new(0.5, 0, 0.28717, 0);
+G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["Text"] = [[Premium key]];
+G2L["b"]["Name"] = [[SubText]];
+G2L["b"]["Position"] = UDim2.new(0, 0, 0.71283, 0);
+
+
+-- StarterGui.gui.Main.Header.SubText.UIPadding
+G2L["c"] = Instance.new("UIPadding", G2L["b"]);
+G2L["c"]["PaddingLeft"] = UDim.new(0, 4);
+
+
+-- StarterGui.gui.Main.Header.Logo
+G2L["d"] = Instance.new("ImageLabel", G2L["5"]);
+G2L["d"]["BorderSizePixel"] = 0;
+G2L["d"]["ScaleType"] = Enum.ScaleType.Fit;
+G2L["d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["d"]["Image"] = [[rbxassetid://73047193591184]];
+G2L["d"]["Size"] = UDim2.new(0.095, 0, 0.71283, 0);
+G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d"]["BackgroundTransparency"] = 1;
+G2L["d"]["Name"] = [[Logo]];
+
+
+-- StarterGui.gui.Main.Header.Close
+G2L["e"] = Instance.new("ImageButton", G2L["5"]);
+G2L["e"]["BorderSizePixel"] = 0;
+G2L["e"]["BackgroundTransparency"] = 1;
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e"]["ImageColor3"] = Color3.fromRGB(218, 0, 255);
+G2L["e"]["Image"] = [[rbxassetid://132261474823036]];
+G2L["e"]["Size"] = UDim2.new(0.1, 0, 0.81466, 0);
+G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e"]["Name"] = [[Close]];
+G2L["e"]["Position"] = UDim2.new(0.89, 0, 0.081, 0);
+
+
+-- StarterGui.gui.Main.Header.Close.UICorner
+G2L["f"] = Instance.new("UICorner", G2L["e"]);
+
+
+
+-- StarterGui.gui.Main.Header.Close.UIStroke
+G2L["10"] = Instance.new("UIStroke", G2L["e"]);
+G2L["10"]["Thickness"] = 0.9;
+G2L["10"]["Color"] = Color3.fromRGB(218, 0, 255);
+
+
+-- StarterGui.gui.Main.UIStroke
+G2L["11"] = Instance.new("UIStroke", G2L["2"]);
+G2L["11"]["Thickness"] = 0.9;
+G2L["11"]["Color"] = Color3.fromRGB(218, 0, 255);
+
+
+-- StarterGui.gui.Minimized
+G2L["12"] = Instance.new("ImageButton", G2L["1"]);
+-- [ERROR] cannot convert HoverImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["12"]["BorderSizePixel"] = 0;
+G2L["12"]["ScaleType"] = Enum.ScaleType.Fit;
+G2L["12"]["AutoButtonColor"] = false;
+G2L["12"]["Visible"] = false;
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["12"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["12"]["Image"] = [[rbxassetid://73047193591184]];
+G2L["12"]["Size"] = UDim2.new(0.0342, 0, 0.06281, 0);
+G2L["12"]["HoverImage"] = [[rbxassetid://73047193591184]];
+G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12"]["Name"] = [[Minimized]];
+G2L["12"]["Position"] = UDim2.new(0.50255, 0, 0.26382, 0);
+
+
+-- StarterGui.gui.Minimized.UICorner
+G2L["13"] = Instance.new("UICorner", G2L["12"]);
+
+
+
+-- StarterGui.gui.Minimized.UIStroke
+G2L["14"] = Instance.new("UIStroke", G2L["12"]);
+G2L["14"]["Thickness"] = 0.9;
+G2L["14"]["Color"] = Color3.fromRGB(218, 0, 255);
+
+
+-- StarterGui.gui.Minimized.UIGradient
+G2L["15"] = Instance.new("UIGradient", G2L["12"]);
+G2L["15"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(54, 0, 63)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(10, 0, 23))};
+
+
+-- StarterGui.gui.Minimized.ImageLabel
+G2L["16"] = Instance.new("ImageLabel", G2L["12"]);
+G2L["16"]["BorderSizePixel"] = 0;
+G2L["16"]["ScaleType"] = Enum.ScaleType.Fit;
+G2L["16"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["16"]["Image"] = [[rbxassetid://73047193591184]];
+G2L["16"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.gui.Minimized.UIAspectRatioConstraint
+G2L["17"] = Instance.new("UIAspectRatioConstraint", G2L["12"]);
+
+
+
+-- StarterGui.gui.Minimized.drag
+G2L["18"] = Instance.new("LocalScript", G2L["12"]);
+G2L["18"]["Name"] = [[drag]];
+
+
+-- StarterGui.gui.drag
+G2L["19"] = Instance.new("LocalScript", G2L["1"]);
+G2L["19"]["Name"] = [[drag]];
+
+
+-- StarterGui.gui.toggle
+G2L["1a"] = Instance.new("LocalScript", G2L["1"]);
+G2L["1a"]["Name"] = [[toggle]];
+
+
+-- StarterGui.gui.Minimized.drag
+local function C_18()
+local script = G2L["18"];
 	local UIS = game:GetService('UserInputService')
 	local button = script.Parent
 	local dragToggle = nil
@@ -236,20 +257,11 @@ local function BKWD_fake_script() -- Fake Script: StarterGui.gui.Minimized.drag
 			end
 		end
 	end)
-end
-local function AXVT_fake_script() -- Fake Script: StarterGui.gui.drag
-    local script = Instance.new("LocalScript")
-    script.Name = "drag"
-    script.Parent = Converted["_gui"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
+end;
+task.spawn(C_18);
+-- StarterGui.gui.drag
+local function C_19()
+local script = G2L["19"];
 	local UIS = game:GetService('UserInputService')
 	local header = script.Parent.Main.Header
 	local frame = script.Parent.Main
@@ -285,20 +297,11 @@ local function AXVT_fake_script() -- Fake Script: StarterGui.gui.drag
 			end
 		end
 	end)
-end
-local function TFEV_fake_script() -- Fake Script: StarterGui.gui.toggle
-    local script = Instance.new("LocalScript")
-    script.Name = "toggle"
-    script.Parent = Converted["_gui"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
+end;
+task.spawn(C_19);
+-- StarterGui.gui.toggle
+local function C_1a()
+local script = G2L["1a"];
 	local main = script.Parent.Main
 	local minimized = script.Parent.Minimized
 	local close = main.Header.Close
@@ -339,8 +342,7 @@ local function TFEV_fake_script() -- Fake Script: StarterGui.gui.toggle
 		open = false
 		end
 	end)
-end
+end;
+task.spawn(C_1a);
 
-coroutine.wrap(BKWD_fake_script)()
-coroutine.wrap(AXVT_fake_script)()
-coroutine.wrap(TFEV_fake_script)()
+return G2L["1"], require;
