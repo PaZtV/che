@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 26 | Scripts: 3 | Modules: 0 | Tags: 0
+-- Instances: 28 | Scripts: 4 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.gui
@@ -154,75 +154,127 @@ G2L["11"]["Thickness"] = 0.9;
 G2L["11"]["Color"] = Color3.fromRGB(218, 0, 255);
 
 
--- StarterGui.gui.Minimized
-G2L["12"] = Instance.new("ImageButton", G2L["1"]);
--- [ERROR] cannot convert HoverImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+-- StarterGui.gui.Main.TextButton
+G2L["12"] = Instance.new("TextButton", G2L["2"]);
+G2L["12"]["TextWrapped"] = true;
 G2L["12"]["BorderSizePixel"] = 0;
-G2L["12"]["ScaleType"] = Enum.ScaleType.Fit;
-G2L["12"]["AutoButtonColor"] = false;
-G2L["12"]["Visible"] = false;
--- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["12"]["TextSize"] = 14;
+G2L["12"]["TextScaled"] = true;
+G2L["12"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["12"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["12"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["12"]["Image"] = [[rbxassetid://73047193591184]];
-G2L["12"]["Size"] = UDim2.new(0.0342, 0, 0.06281, 0);
-G2L["12"]["HoverImage"] = [[rbxassetid://73047193591184]];
+G2L["12"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["12"]["Size"] = UDim2.new(0.5, 0, 0.16667, 0);
 G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["12"]["Name"] = [[Minimized]];
-G2L["12"]["Position"] = UDim2.new(0.50255, 0, 0.26382, 0);
+G2L["12"]["Text"] = [[sped kid]];
+G2L["12"]["Position"] = UDim2.new(0.095, 0, 0.31667, 0);
+
+
+-- StarterGui.gui.Main.TextButton.LocalScript
+G2L["13"] = Instance.new("LocalScript", G2L["12"]);
+
+
+
+-- StarterGui.gui.Minimized
+G2L["14"] = Instance.new("ImageButton", G2L["1"]);
+-- [ERROR] cannot convert HoverImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["14"]["BorderSizePixel"] = 0;
+G2L["14"]["ScaleType"] = Enum.ScaleType.Fit;
+G2L["14"]["AutoButtonColor"] = false;
+G2L["14"]["Visible"] = false;
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["14"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["14"]["Image"] = [[rbxassetid://73047193591184]];
+G2L["14"]["Size"] = UDim2.new(0.0342, 0, 0.06281, 0);
+G2L["14"]["HoverImage"] = [[rbxassetid://73047193591184]];
+G2L["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14"]["Name"] = [[Minimized]];
+G2L["14"]["Position"] = UDim2.new(0.50255, 0, 0.26382, 0);
 
 
 -- StarterGui.gui.Minimized.UICorner
-G2L["13"] = Instance.new("UICorner", G2L["12"]);
+G2L["15"] = Instance.new("UICorner", G2L["14"]);
 
 
 
 -- StarterGui.gui.Minimized.UIStroke
-G2L["14"] = Instance.new("UIStroke", G2L["12"]);
-G2L["14"]["Thickness"] = 0.9;
-G2L["14"]["Color"] = Color3.fromRGB(218, 0, 255);
+G2L["16"] = Instance.new("UIStroke", G2L["14"]);
+G2L["16"]["Thickness"] = 0.9;
+G2L["16"]["Color"] = Color3.fromRGB(218, 0, 255);
 
 
 -- StarterGui.gui.Minimized.UIGradient
-G2L["15"] = Instance.new("UIGradient", G2L["12"]);
-G2L["15"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(54, 0, 63)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(10, 0, 23))};
+G2L["17"] = Instance.new("UIGradient", G2L["14"]);
+G2L["17"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(54, 0, 63)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(10, 0, 23))};
 
 
 -- StarterGui.gui.Minimized.ImageLabel
-G2L["16"] = Instance.new("ImageLabel", G2L["12"]);
-G2L["16"]["BorderSizePixel"] = 0;
-G2L["16"]["ScaleType"] = Enum.ScaleType.Fit;
-G2L["16"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["18"] = Instance.new("ImageLabel", G2L["14"]);
+G2L["18"]["BorderSizePixel"] = 0;
+G2L["18"]["ScaleType"] = Enum.ScaleType.Fit;
+G2L["18"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 -- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["16"]["Image"] = [[rbxassetid://73047193591184]];
-G2L["16"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["16"]["BackgroundTransparency"] = 1;
+G2L["18"]["Image"] = [[rbxassetid://73047193591184]];
+G2L["18"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.gui.Minimized.UIAspectRatioConstraint
-G2L["17"] = Instance.new("UIAspectRatioConstraint", G2L["12"]);
+G2L["19"] = Instance.new("UIAspectRatioConstraint", G2L["14"]);
 
 
 
 -- StarterGui.gui.Minimized.drag
-G2L["18"] = Instance.new("LocalScript", G2L["12"]);
-G2L["18"]["Name"] = [[drag]];
+G2L["1a"] = Instance.new("LocalScript", G2L["14"]);
+G2L["1a"]["Name"] = [[drag]];
 
 
 -- StarterGui.gui.drag
-G2L["19"] = Instance.new("LocalScript", G2L["1"]);
-G2L["19"]["Name"] = [[drag]];
+G2L["1b"] = Instance.new("LocalScript", G2L["1"]);
+G2L["1b"]["Name"] = [[drag]];
 
 
 -- StarterGui.gui.toggle
-G2L["1a"] = Instance.new("LocalScript", G2L["1"]);
-G2L["1a"]["Name"] = [[toggle]];
+G2L["1c"] = Instance.new("LocalScript", G2L["1"]);
+G2L["1c"]["Name"] = [[toggle]];
 
 
+-- StarterGui.gui.Main.TextButton.LocalScript
+local function C_13()
+local script = G2L["13"];
+	local button = script.Parent
+	local player = game.Players.LocalPlayer
+	local character = player.Character
+	
+	local hum = character:WaitForChild("HumanoidRootPart")
+	local lastPosition = hum.Position
+	
+	local posssss
+	local splendid = false
+	
+	button.Activated:Connect(function()
+		if character then
+			splendid = true
+		end
+	end)
+	
+	game:GetService("RunService").Heartbeat:Connect(function(delta)
+		if hum and splendid == true then
+			local currentPosition = hum.Position
+			local movementDelta = currentPosition - lastPosition
+	
+			-- Apply movement delta again to double speed
+			hum.CFrame = hum.CFrame + movementDelta*2
+	
+			lastPosition = hum.Position -- Update for next frame
+		end
+	end)
+end;
+task.spawn(C_13);
 -- StarterGui.gui.Minimized.drag
-local function C_18()
-local script = G2L["18"];
+local function C_1a()
+local script = G2L["1a"];
 	local UIS = game:GetService('UserInputService')
 	local button = script.Parent
 	local dragToggle = nil
@@ -258,10 +310,10 @@ local script = G2L["18"];
 		end
 	end)
 end;
-task.spawn(C_18);
+task.spawn(C_1a);
 -- StarterGui.gui.drag
-local function C_19()
-local script = G2L["19"];
+local function C_1b()
+local script = G2L["1b"];
 	local UIS = game:GetService('UserInputService')
 	local header = script.Parent.Main.Header
 	local frame = script.Parent.Main
@@ -298,10 +350,10 @@ local script = G2L["19"];
 		end
 	end)
 end;
-task.spawn(C_19);
+task.spawn(C_1b);
 -- StarterGui.gui.toggle
-local function C_1a()
-local script = G2L["1a"];
+local function C_1c()
+local script = G2L["1c"];
 	local main = script.Parent.Main
 	local minimized = script.Parent.Minimized
 	local close = main.Header.Close
@@ -343,6 +395,6 @@ local script = G2L["1a"];
 		end
 	end)
 end;
-task.spawn(C_1a);
+task.spawn(C_1c);
 
 return G2L["1"], require;
