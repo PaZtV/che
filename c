@@ -34,7 +34,7 @@ G2L["4"] = Instance.new("Frame", G2L["1"]);
 G2L["4"]["BorderSizePixel"] = 0;
 G2L["4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["4"]["Size"] = UDim2.new(0.2736, 0, 0.34602, 0);
-G2L["4"]["Position"] = UDim2.new(0.37372, 0, 0.32636, 0);
+G2L["4"]["Position"] = UDim2.new(0.37304, 0, 0.32887, 0);
 G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["4"]["Name"] = [[Main]];
 
@@ -144,11 +144,12 @@ G2L["10"]["BackgroundTransparency"] = 1;
 -- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
 G2L["10"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["10"]["ImageColor3"] = Color3.fromRGB(218, 0, 255);
+G2L["10"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
 G2L["10"]["Image"] = [[rbxassetid://132261474823036]];
 G2L["10"]["Size"] = UDim2.new(0.1, 0, 0.81466, 0);
 G2L["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["10"]["Name"] = [[Close]];
-G2L["10"]["Position"] = UDim2.new(0.89, 0, 0.081, 0);
+G2L["10"]["Position"] = UDim2.new(0.93901, 0, 0.4803, 0);
 
 
 -- StarterGui.gui.Main.Header.Close.UICorner
@@ -332,7 +333,7 @@ G2L["25"]["Size"] = UDim2.new(0.0342, 0, 0.06281, 0);
 G2L["25"]["HoverImage"] = [[rbxassetid://73047193591184]];
 G2L["25"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["25"]["Name"] = [[Minimized]];
-G2L["25"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+G2L["25"]["Position"] = UDim2.new(0.60876, 0, 0.35553, 0);
 
 
 -- StarterGui.gui.Minimized.drag
@@ -431,6 +432,9 @@ local script = G2L["3"];
 	
 		local center = minimized.AbsolutePosition + (minimized.AbsoluteSize / 2)
 	
+		local inset = game:GetService("GuiService"):GetGuiInset()
+		center = center + Vector2.new(0, inset.Y)
+	
 		local off = close.AbsolutePosition - main.AbsolutePosition
 		local offhalf = off + (close.AbsoluteSize / 2)
 		local new = center - offhalf
@@ -446,9 +450,13 @@ local script = G2L["3"];
 		if open == true then
 			
 		local pos = close.AbsolutePosition
+		local size = close.AbsoluteSize
 		local screen = gui.AbsoluteSize
-	
-		local center = pos + (close.AbsoluteSize / 2)
+		
+		local center = pos + (size / 2)
+		local inset = game:GetService("GuiService"):GetGuiInset()
+		center = center + Vector2.new(0, inset.Y)
+		
 		minimized.Position = UDim2.new(0, center.X, 0, center.Y)
 	
 		minimized.Visible = true
