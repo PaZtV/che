@@ -7,12 +7,13 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 43 | Scripts: 4 | Modules: 0 | Tags: 0
+-- Instances: 55 | Scripts: 5 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.gui
 G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
 G2L["1"]["IgnoreGuiInset"] = true;
+G2L["1"]["DisplayOrder"] = 999999999;
 G2L["1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets;
 G2L["1"]["Name"] = [[gui]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
@@ -189,7 +190,7 @@ G2L["15"]["ScrollBarThickness"] = 5;
 G2L["15"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.gui.Main.ScrollingFrame.CFrame
+-- StarterGui.gui.Main.ScrollingFrame.Buttno?
 G2L["16"] = Instance.new("Frame", G2L["15"]);
 G2L["16"]["BorderSizePixel"] = 0;
 G2L["16"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
@@ -197,20 +198,21 @@ G2L["16"]["AutomaticSize"] = Enum.AutomaticSize.X;
 G2L["16"]["Size"] = UDim2.new(0.93733, 0, 0.18636, 0);
 G2L["16"]["Position"] = UDim2.new(0.0218, 0, 0.0411, 0);
 G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["16"]["Name"] = [[CFrame]];
+G2L["16"]["Name"] = [[Buttno?]];
+G2L["16"]["BackgroundTransparency"] = 0.65;
 
 
--- StarterGui.gui.Main.ScrollingFrame.CFrame.UICorner
+-- StarterGui.gui.Main.ScrollingFrame.Buttno?.UICorner
 G2L["17"] = Instance.new("UICorner", G2L["16"]);
 
 
 
--- StarterGui.gui.Main.ScrollingFrame.CFrame.UIGradient
+-- StarterGui.gui.Main.ScrollingFrame.Buttno?.UIGradient
 G2L["18"] = Instance.new("UIGradient", G2L["16"]);
 G2L["18"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(82, 0, 96)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(40, 0, 103))};
 
 
--- StarterGui.gui.Main.ScrollingFrame.CFrame.Title
+-- StarterGui.gui.Main.ScrollingFrame.Buttno?.Title
 G2L["19"] = Instance.new("TextLabel", G2L["16"]);
 G2L["19"]["TextWrapped"] = true;
 G2L["19"]["BorderSizePixel"] = 0;
@@ -223,11 +225,11 @@ G2L["19"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["19"]["BackgroundTransparency"] = 1;
 G2L["19"]["Size"] = UDim2.new(0.65882, 0, 0.61224, 0);
 G2L["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["19"]["Text"] = [[Speed Boost (CFrame)]];
+G2L["19"]["Text"] = [[placeholder]];
 G2L["19"]["Name"] = [[Title]];
 
 
--- StarterGui.gui.Main.ScrollingFrame.CFrame.Title.UIPadding
+-- StarterGui.gui.Main.ScrollingFrame.Buttno?.Title.UIPadding
 G2L["1a"] = Instance.new("UIPadding", G2L["19"]);
 G2L["1a"]["PaddingTop"] = UDim.new(0, 4);
 G2L["1a"]["PaddingRight"] = UDim.new(0, 4);
@@ -235,7 +237,7 @@ G2L["1a"]["PaddingLeft"] = UDim.new(0, 2);
 G2L["1a"]["PaddingBottom"] = UDim.new(0, 4);
 
 
--- StarterGui.gui.Main.ScrollingFrame.CFrame.SubText
+-- StarterGui.gui.Main.ScrollingFrame.Buttno?.SubText
 G2L["1b"] = Instance.new("TextLabel", G2L["16"]);
 G2L["1b"]["TextWrapped"] = true;
 G2L["1b"]["BorderSizePixel"] = 0;
@@ -249,12 +251,12 @@ G2L["1b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["1b"]["BackgroundTransparency"] = 1;
 G2L["1b"]["Size"] = UDim2.new(0.38529, 0, 0.4898, 0);
 G2L["1b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1b"]["Text"] = [[no walkspeed change]];
+G2L["1b"]["Text"] = [[hmmm]];
 G2L["1b"]["Name"] = [[SubText]];
 G2L["1b"]["Position"] = UDim2.new(0, 0, 0.4898, 0);
 
 
--- StarterGui.gui.Main.ScrollingFrame.CFrame.SubText.UIPadding
+-- StarterGui.gui.Main.ScrollingFrame.Buttno?.SubText.UIPadding
 G2L["1c"] = Instance.new("UIPadding", G2L["1b"]);
 G2L["1c"]["PaddingTop"] = UDim.new(0, 2);
 G2L["1c"]["PaddingRight"] = UDim.new(0, 2);
@@ -262,7 +264,7 @@ G2L["1c"]["PaddingLeft"] = UDim.new(0, 2);
 G2L["1c"]["PaddingBottom"] = UDim.new(0, 2);
 
 
--- StarterGui.gui.Main.ScrollingFrame.CFrame.Switch
+-- StarterGui.gui.Main.ScrollingFrame.Buttno?.Switch
 G2L["1d"] = Instance.new("Frame", G2L["16"]);
 G2L["1d"]["BorderSizePixel"] = 0;
 G2L["1d"]["BackgroundColor3"] = Color3.fromRGB(19, 0, 91);
@@ -273,18 +275,18 @@ G2L["1d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["1d"]["Name"] = [[Switch]];
 
 
--- StarterGui.gui.Main.ScrollingFrame.CFrame.Switch.UICorner
+-- StarterGui.gui.Main.ScrollingFrame.Buttno?.Switch.UICorner
 G2L["1e"] = Instance.new("UICorner", G2L["1d"]);
 G2L["1e"]["CornerRadius"] = UDim.new(0, 200);
 
 
--- StarterGui.gui.Main.ScrollingFrame.CFrame.Switch.UIStroke
+-- StarterGui.gui.Main.ScrollingFrame.Buttno?.Switch.UIStroke
 G2L["1f"] = Instance.new("UIStroke", G2L["1d"]);
 G2L["1f"]["Thickness"] = 0.9;
 G2L["1f"]["Color"] = Color3.fromRGB(218, 0, 255);
 
 
--- StarterGui.gui.Main.ScrollingFrame.CFrame.Switch.Button
+-- StarterGui.gui.Main.ScrollingFrame.Buttno?.Switch.Button
 G2L["20"] = Instance.new("TextButton", G2L["1d"]);
 G2L["20"]["BorderSizePixel"] = 0;
 G2L["20"]["TextSize"] = 14;
@@ -298,19 +300,20 @@ G2L["20"]["Text"] = [[]];
 G2L["20"]["Name"] = [[Button]];
 
 
--- StarterGui.gui.Main.ScrollingFrame.CFrame.Switch.Button.UICorner
+-- StarterGui.gui.Main.ScrollingFrame.Buttno?.Switch.Button.UICorner
 G2L["21"] = Instance.new("UICorner", G2L["20"]);
 G2L["21"]["CornerRadius"] = UDim.new(0, 200);
 
 
--- StarterGui.gui.Main.ScrollingFrame.CFrame.ON
+-- StarterGui.gui.Main.ScrollingFrame.Buttno?.ON
 G2L["22"] = Instance.new("BoolValue", G2L["16"]);
 G2L["22"]["Name"] = [[ON]];
 
 
--- StarterGui.gui.Main.ScrollingFrame.CFrame.LocalScript
+-- StarterGui.gui.Main.ScrollingFrame.Buttno?.LocalScript
 G2L["23"] = Instance.new("LocalScript", G2L["16"]);
-
+G2L["23"]["Enabled"] = false;
+G2L["23"]["Disabled"] = true;
 
 
 -- StarterGui.gui.Main.ScrollingFrame.UIAspectRatioConstraint
@@ -318,59 +321,177 @@ G2L["24"] = Instance.new("UIAspectRatioConstraint", G2L["15"]);
 G2L["24"]["AspectRatio"] = 1.59565;
 
 
--- StarterGui.gui.Minimized
-G2L["25"] = Instance.new("ImageButton", G2L["1"]);
--- [ERROR] cannot convert HoverImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+-- StarterGui.gui.Main.ScrollingFrame.Buttno?
+G2L["25"] = Instance.new("Frame", G2L["15"]);
 G2L["25"]["BorderSizePixel"] = 0;
-G2L["25"]["ScaleType"] = Enum.ScaleType.Fit;
-G2L["25"]["AutoButtonColor"] = false;
-G2L["25"]["Visible"] = false;
--- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
 G2L["25"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["25"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["25"]["Image"] = [[rbxassetid://73047193591184]];
-G2L["25"]["Size"] = UDim2.new(0.0342, 0, 0.06281, 0);
-G2L["25"]["HoverImage"] = [[rbxassetid://73047193591184]];
+G2L["25"]["AutomaticSize"] = Enum.AutomaticSize.X;
+G2L["25"]["Size"] = UDim2.new(0.93733, 0, 0.18636, 0);
+G2L["25"]["Position"] = UDim2.new(0.0218, 0, 0.2671, 0);
 G2L["25"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["25"]["Name"] = [[Minimized]];
-G2L["25"]["Position"] = UDim2.new(0.60876, 0, 0.35553, 0);
+G2L["25"]["Name"] = [[Buttno?]];
+
+
+-- StarterGui.gui.Main.ScrollingFrame.Buttno?.UICorner
+G2L["26"] = Instance.new("UICorner", G2L["25"]);
+
+
+
+-- StarterGui.gui.Main.ScrollingFrame.Buttno?.UIGradient
+G2L["27"] = Instance.new("UIGradient", G2L["25"]);
+G2L["27"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(82, 0, 96)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(40, 0, 103))};
+
+
+-- StarterGui.gui.Main.ScrollingFrame.Buttno?.Title
+G2L["28"] = Instance.new("TextLabel", G2L["25"]);
+G2L["28"]["TextWrapped"] = true;
+G2L["28"]["BorderSizePixel"] = 0;
+G2L["28"]["TextSize"] = 14;
+G2L["28"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["28"]["TextScaled"] = true;
+G2L["28"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["28"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["28"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["28"]["BackgroundTransparency"] = 1;
+G2L["28"]["Size"] = UDim2.new(0.5658, 0, 0.61224, 0);
+G2L["28"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["28"]["Text"] = [[CFrame Multiplier]];
+G2L["28"]["Name"] = [[Title]];
+
+
+-- StarterGui.gui.Main.ScrollingFrame.Buttno?.Title.UIPadding
+G2L["29"] = Instance.new("UIPadding", G2L["28"]);
+G2L["29"]["PaddingTop"] = UDim.new(0, 4);
+G2L["29"]["PaddingRight"] = UDim.new(0, 4);
+G2L["29"]["PaddingLeft"] = UDim.new(0, 2);
+G2L["29"]["PaddingBottom"] = UDim.new(0, 4);
+
+
+-- StarterGui.gui.Main.ScrollingFrame.Buttno?.SubText
+G2L["2a"] = Instance.new("TextLabel", G2L["25"]);
+G2L["2a"]["TextWrapped"] = true;
+G2L["2a"]["BorderSizePixel"] = 0;
+G2L["2a"]["TextSize"] = 14;
+G2L["2a"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["2a"]["TextTransparency"] = 0.85;
+G2L["2a"]["TextScaled"] = true;
+G2L["2a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2a"]["BackgroundTransparency"] = 1;
+G2L["2a"]["Size"] = UDim2.new(0.43649, 0, 0.4898, 0);
+G2L["2a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2a"]["Text"] = [[pretty buggy ]];
+G2L["2a"]["Name"] = [[SubText]];
+G2L["2a"]["Position"] = UDim2.new(0, 0, 0.4898, 0);
+
+
+-- StarterGui.gui.Main.ScrollingFrame.Buttno?.SubText.UIPadding
+G2L["2b"] = Instance.new("UIPadding", G2L["2a"]);
+G2L["2b"]["PaddingTop"] = UDim.new(0, 2);
+G2L["2b"]["PaddingRight"] = UDim.new(0, 2);
+G2L["2b"]["PaddingLeft"] = UDim.new(0, 2);
+G2L["2b"]["PaddingBottom"] = UDim.new(0, 2);
+
+
+-- StarterGui.gui.Main.ScrollingFrame.Buttno?.LocalScript
+G2L["2c"] = Instance.new("LocalScript", G2L["25"]);
+
+
+
+-- StarterGui.gui.Main.ScrollingFrame.Buttno?.Multiplier
+G2L["2d"] = Instance.new("TextBox", G2L["25"]);
+G2L["2d"]["CursorPosition"] = -1;
+G2L["2d"]["Name"] = [[Multiplier]];
+G2L["2d"]["PlaceholderColor3"] = Color3.fromRGB(70, 33, 133);
+G2L["2d"]["BorderSizePixel"] = 0;
+G2L["2d"]["TextWrapped"] = true;
+G2L["2d"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2d"]["TextSize"] = 14;
+G2L["2d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2d"]["TextScaled"] = true;
+G2L["2d"]["BackgroundColor3"] = Color3.fromRGB(19, 0, 91);
+G2L["2d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2d"]["PlaceholderText"] = [[1]];
+G2L["2d"]["Size"] = UDim2.new(0.17631, 0, 0.592, 0);
+G2L["2d"]["Position"] = UDim2.new(0.78824, 0, 0.19877, 0);
+G2L["2d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2d"]["Text"] = [[]];
+
+
+-- StarterGui.gui.Main.ScrollingFrame.Buttno?.Multiplier.UIStroke
+G2L["2e"] = Instance.new("UIStroke", G2L["2d"]);
+G2L["2e"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["2e"]["Thickness"] = 0.9;
+G2L["2e"]["Color"] = Color3.fromRGB(218, 0, 255);
+
+
+-- StarterGui.gui.Main.ScrollingFrame.Buttno?.Multiplier.UICorner
+G2L["2f"] = Instance.new("UICorner", G2L["2d"]);
+G2L["2f"]["CornerRadius"] = UDim.new(0, 10);
+
+
+-- StarterGui.gui.Main.ScrollingFrame.Buttno?.Multiplier.UIPadding
+G2L["30"] = Instance.new("UIPadding", G2L["2d"]);
+G2L["30"]["PaddingTop"] = UDim.new(0, 4);
+G2L["30"]["PaddingRight"] = UDim.new(0, 4);
+G2L["30"]["PaddingLeft"] = UDim.new(0, 2);
+G2L["30"]["PaddingBottom"] = UDim.new(0, 4);
+
+
+-- StarterGui.gui.Minimized
+G2L["31"] = Instance.new("ImageButton", G2L["1"]);
+-- [ERROR] cannot convert HoverImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["31"]["BorderSizePixel"] = 0;
+G2L["31"]["ScaleType"] = Enum.ScaleType.Fit;
+G2L["31"]["AutoButtonColor"] = false;
+G2L["31"]["Visible"] = false;
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["31"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["31"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["31"]["Image"] = [[rbxassetid://73047193591184]];
+G2L["31"]["Size"] = UDim2.new(0.0342, 0, 0.06281, 0);
+G2L["31"]["HoverImage"] = [[rbxassetid://73047193591184]];
+G2L["31"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["31"]["Name"] = [[Minimized]];
+G2L["31"]["Position"] = UDim2.new(0.60876, 0, 0.35553, 0);
 
 
 -- StarterGui.gui.Minimized.drag
-G2L["26"] = Instance.new("LocalScript", G2L["25"]);
-G2L["26"]["Name"] = [[drag]];
+G2L["32"] = Instance.new("LocalScript", G2L["31"]);
+G2L["32"]["Name"] = [[drag]];
 
 
 -- StarterGui.gui.Minimized.UICorner
-G2L["27"] = Instance.new("UICorner", G2L["25"]);
+G2L["33"] = Instance.new("UICorner", G2L["31"]);
 
 
 
 -- StarterGui.gui.Minimized.UIStroke
-G2L["28"] = Instance.new("UIStroke", G2L["25"]);
-G2L["28"]["Thickness"] = 0.9;
-G2L["28"]["Color"] = Color3.fromRGB(218, 0, 255);
+G2L["34"] = Instance.new("UIStroke", G2L["31"]);
+G2L["34"]["Thickness"] = 0.9;
+G2L["34"]["Color"] = Color3.fromRGB(218, 0, 255);
 
 
 -- StarterGui.gui.Minimized.UIGradient
-G2L["29"] = Instance.new("UIGradient", G2L["25"]);
-G2L["29"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(54, 0, 63)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(10, 0, 23))};
+G2L["35"] = Instance.new("UIGradient", G2L["31"]);
+G2L["35"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(54, 0, 63)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(10, 0, 23))};
 
 
 -- StarterGui.gui.Minimized.ImageLabel
-G2L["2a"] = Instance.new("ImageLabel", G2L["25"]);
-G2L["2a"]["BorderSizePixel"] = 0;
-G2L["2a"]["ScaleType"] = Enum.ScaleType.Fit;
-G2L["2a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["36"] = Instance.new("ImageLabel", G2L["31"]);
+G2L["36"]["BorderSizePixel"] = 0;
+G2L["36"]["ScaleType"] = Enum.ScaleType.Fit;
+G2L["36"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 -- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["2a"]["Image"] = [[rbxassetid://73047193591184]];
-G2L["2a"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["2a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2a"]["BackgroundTransparency"] = 1;
+G2L["36"]["Image"] = [[rbxassetid://73047193591184]];
+G2L["36"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["36"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["36"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.gui.Minimized.UIAspectRatioConstraint
-G2L["2b"] = Instance.new("UIAspectRatioConstraint", G2L["25"]);
+G2L["37"] = Instance.new("UIAspectRatioConstraint", G2L["31"]);
 
 
 
@@ -466,15 +587,12 @@ local script = G2L["3"];
 	end)
 end;
 task.spawn(C_3);
--- StarterGui.gui.Main.ScrollingFrame.CFrame.LocalScript
-local function C_23()
-local script = G2L["23"];
-	local button = script.Parent.Switch.Button
-	local switch = button.Parent
+-- StarterGui.gui.Main.ScrollingFrame.Buttno?.LocalScript
+local function C_2c()
+local script = G2L["2c"];
+	local textbox = script.Parent.Multiplier
 	
 	local tween = game:GetService("TweenService")
-	
-	local ison = script.Parent.ON
 	
 	local player = game.Players.LocalPlayer
 	local character = player.Character
@@ -482,49 +600,37 @@ local script = G2L["23"];
 	local hum = character:WaitForChild("HumanoidRootPart")
 	local lastPosition = hum.Position
 	
-	local splendid = false
-	
-	local off = UDim2.fromScale(0, 0)
-	local on = UDim2.fromScale(0.5, 0)
-	
-	button.Activated:Connect(function()
-		if character then
-			if ison.Value == false then
-				tween:Create(button, TweenInfo.new(0.05), {Position = on}):Play()
-				ison.Value = true
-				lastPosition = hum.Position
-			else
-				tween:Create(button, TweenInfo.new(0.05), {Position = off}):Play()
-				ison.Value = false
-			end
-		end
-	end)
 	
 	game:GetService("RunService").RenderStepped:Connect(function(delta)
-		if hum and ison.Value == true then
+		if hum then
 			local currentPosition = hum.Position
 			local movementDelta = currentPosition - lastPosition
 			
-			print(movementDelta)
+			local number_pre = textbox.Text
+			local multi = tonumber(number_pre)
 			
+			if multi then
+				textbox.TextColor3 = Color3.new(1,1,1)
 			if movementDelta.X >= -2 and movementDelta.X <= 2 and
 				movementDelta.Y >= -2 and movementDelta.Y <= 2 and
 				movementDelta.Z >= -2 and movementDelta.Z <= 2 then
 				
-				hum.CFrame = hum.CFrame + movementDelta*2
+				hum.CFrame = hum.CFrame + movementDelta*(multi-1)
 	
 				lastPosition = hum.Position -- Update for next frame
 			else
 				lastPosition = hum.Position
 			end
-				-- Apply movement delta again to double spee
+			else
+				textbox.TextColor3 = Color3.new(1)
+			end	-- Apply movement delta again to double spee
 		end
 	end)
 end;
-task.spawn(C_23);
+task.spawn(C_2c);
 -- StarterGui.gui.Minimized.drag
-local function C_26()
-local script = G2L["26"];
+local function C_32()
+local script = G2L["32"];
 	local UIS = game:GetService('UserInputService')
 	local button = script.Parent
 	local dragToggle = nil
@@ -560,6 +666,6 @@ local script = G2L["26"];
 		end
 	end)
 end;
-task.spawn(C_26);
+task.spawn(C_32);
 
 return G2L["1"], require;
