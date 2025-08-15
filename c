@@ -602,6 +602,7 @@ local script = G2L["2c"];
 	
 	
 	game:GetService("RunService").RenderStepped:Connect(function(delta)
+		hum = character:WaitForChild("HumanoidRootPart")
 		if hum then
 			local currentPosition = hum.Position
 			local movementDelta = currentPosition - lastPosition
@@ -616,7 +617,6 @@ local script = G2L["2c"];
 				movementDelta.Z >= -2 and movementDelta.Z <= 2 then
 				
 				hum.CFrame = hum.CFrame + movementDelta*(multi-1)
-	
 				lastPosition = hum.Position -- Update for next frame
 			else
 				lastPosition = hum.Position
