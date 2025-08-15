@@ -12,8 +12,11 @@ local G2L = {};
 
 -- StarterGui.gui
 G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["IgnoreGuiInset"] = true;
+G2L["1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets;
 G2L["1"]["Name"] = [[gui]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+G2L["1"]["ResetOnSpawn"] = false;
 
 
 -- StarterGui.gui.drag
@@ -28,11 +31,10 @@ G2L["3"]["Name"] = [[toggle]];
 
 -- StarterGui.gui.Main
 G2L["4"] = Instance.new("Frame", G2L["1"]);
-G2L["4"]["Visible"] = false;
 G2L["4"]["BorderSizePixel"] = 0;
 G2L["4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["4"]["Size"] = UDim2.new(0.2736, 0, 0.34602, 0);
-G2L["4"]["Position"] = UDim2.new(0.48727, 0, 0.38163, 0);
+G2L["4"]["Position"] = UDim2.new(0.37372, 0, 0.32636, 0);
 G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["4"]["Name"] = [[Main]];
 
@@ -321,6 +323,7 @@ G2L["25"] = Instance.new("ImageButton", G2L["1"]);
 G2L["25"]["BorderSizePixel"] = 0;
 G2L["25"]["ScaleType"] = Enum.ScaleType.Fit;
 G2L["25"]["AutoButtonColor"] = false;
+G2L["25"]["Visible"] = false;
 -- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
 G2L["25"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["25"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
