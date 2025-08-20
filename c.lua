@@ -1685,13 +1685,6 @@ local script = G2L["4f"];
 		if is_on.Value == false then
 			tween:Create(buttnon, TweenInfo.new(0.05), {Position = on}):Play()
 			is_on.Value = true
-			
-			for i, prompts in workspace:GetDescendants() do
-				if prompts:IsA("ProximityPrompt") then
-					prompts.HoldDuration = 0
-				end
-			end
-			
 		else
 			tween:Create(buttnon, TweenInfo.new(0.05), {Position = off}):Play()
 			is_on.Value = false
@@ -1699,6 +1692,24 @@ local script = G2L["4f"];
 		end
 	end)
 	
+	game:GetService("RunService").RenderStepped:Connect(function()
+		if is_on.Value == true then
+		for i, prompts in workspace:GetDescendants() do
+			if prompts:IsA("ProximityPrompt") then
+				prompts.HoldDuration = 0
+			end
+		end
+		end
+	end)
+	game:GetService("RunService").Heartbeat:Connect(function()
+		if is_on.Value == true then
+			for i, prompts in workspace:GetDescendants() do
+				if prompts:IsA("ProximityPrompt") then
+					prompts.HoldDuration = 0
+				end
+			end
+		end
+	end)
 end;
 task.spawn(C_4f);
 -- StarterGui.gui.Minimized.drag
