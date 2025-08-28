@@ -1301,17 +1301,7 @@ local script = G2L["3e"];
 	local off = UDim2.fromScale(0.235, 0.5)
 	local on = UDim2.fromScale(0.75, 0.5)
 	
-	local char_col = {
-		torso_col = character:WaitForChild("Torso").CanCollide,
-		head_col = character:WaitForChild("Head").CanCollide,
-		rarm = character:WaitForChild("Right Arm").CanCollide,
-		larm = character:WaitForChild("Left Arm").CanCollide,
-		rleg = character:WaitForChild("Right Leg").CanCollide,
-		lleg = character:WaitForChild("Left Leg").CanCollide
-	}
-	
-	local torso_col = character:WaitForChild("Torso").CanCollide
-	local head_col = character:WaitForChild("Head").CanCollide
+	local char_col = {}
 	
 	speed.Changed:Connect(function()
 		local num = speed.Text
@@ -1409,26 +1399,17 @@ local script = G2L["3e"];
 	
 	local function noclip(hmm)
 		if hmm == true then
-			char_col.head_col = character.Head.CanCollide
-			char_col.torso_col = character.Torso.CanCollide
-			char_col.larm = character["Left Arm"].CanCollide
-			char_col.rarm = character["Right Arm"].CanCollide
-			char_col.lleg = character["Left Leg"].CanCollide
-			char_col.rleg = character["Right Leg"].CanCollide
-			
-			character.Head.CanCollide = false
-			character.Torso.CanCollide = false
-			character["Left Arm"].CanCollide = false
-			character["Right Arm"].CanCollide = false
-			character["Left Leg"].CanCollide = false
-			character["Right Leg"].CanCollide = false
+			for i, parts in ipairs(character:GetChildren()) do
+				if parts:IsA("BasePart") or parts:IsA("MeshPart") then
+					char_col[parts.Name] = parts.CanCollide
+					parts.CanCollide = false
+				end
+			end
 		else
-			character.Head.CanCollide = char_col.head_col
-			character.Torso.CanCollide = char_col.torso_col
-			character["Left Arm"].CanCollide = char_col.larm
-			character["Right Arm"].CanCollide = char_col.rarm
-			character["Left Leg"].CanCollide = char_col.lleg
-			character["Right Leg"].CanCollide = char_col.rleg
+			for i, shittes in pairs(char_col) do
+				local partss = character:FindFirstChild(i, true)
+				partss.CanCollide = shittes
+			end
 		end
 	end
 	
