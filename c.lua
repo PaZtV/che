@@ -1414,6 +1414,9 @@ local script = G2L["3e"];
 	end
 	
 	fly_button.MouseButton1Up:Connect(function()
+		
+		character = player.Character
+		
 		if is_fly.Value == true then
 			stopFlying()
 			
@@ -1434,6 +1437,9 @@ local script = G2L["3e"];
 	end)
 	
 	clip.MouseButton1Up:Connect(function()
+		
+		character = player.Character
+		
 		if character and is_fly.Value == true then
 			if is_clip.Value == false then
 				tween:Create(clip.Butnon, TweenInfo.new(0.05), {Position = on}):Play()
