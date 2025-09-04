@@ -2167,7 +2167,7 @@ local script = G2L["9e"];
 		-- FIXED: do not declare a new local variable
 		if line == nil then
 			line = Instance.new("Frame")
-			line.Name = "player_line"
+			line.Name = part.Parent.Name
 			line.BackgroundColor3 = Color3.new(1, 1, 1)
 			line.AnchorPoint = Vector2.new(0.5, 0.5)
 			line.BorderSizePixel = 0
@@ -2197,7 +2197,7 @@ local script = G2L["9e"];
 	game:GetService("RunService").RenderStepped:Connect(function(delta)
 		for part, line in pairs(targets) do
 			if not part:IsDescendantOf(game.Workspace) then
-				if line and line.Name == "player_line" then line:Destroy() end
+				if line then line:Destroy() end
 				targets[part] = nil
 			end
 		end
@@ -2205,8 +2205,9 @@ local script = G2L["9e"];
 		
 		for i, Player in pairs(game.Players:GetPlayers()) do
 			local char = Player.Character
-			local hrp = char.HumanoidRootPart
-			if char and hrp and Player ~= game.Players.LocalPlayer then
+			if char:FindFirstChild("HumanoidRootPart") and Player ~= game.Players.LocalPlayer then
+				local hrp = char.HumanoidRootPart
+				
 				local line = targets[hrp]
 				if is_on.Value == false then
 					targets[hrp] = nil
