@@ -61,6 +61,7 @@ G2L["8"]["Disabled"] = true;
 
 -- StarterGui.gui.Main
 G2L["9"] = Instance.new("Frame", G2L["1"]);
+G2L["9"]["Visible"] = false;
 G2L["9"]["BorderSizePixel"] = 0;
 G2L["9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["9"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
