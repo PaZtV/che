@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 163 | Scripts: 16 | Modules: 0 | Tags: 7
+-- Instances: 187 | Scripts: 17 | Modules: 0 | Tags: 8
 local CollectionService = game:GetService("CollectionService");
 local G2L = {};
 
@@ -1472,6 +1472,208 @@ G2L["a3"]["Name"] = [[EspLines]];
 G2L["a3"]["BackgroundTransparency"] = 1;
 
 
+-- StarterGui.gui.SAB
+G2L["a4"] = Instance.new("Frame", G2L["1"]);
+G2L["a4"]["BorderSizePixel"] = 0;
+G2L["a4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a4"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["a4"]["Size"] = UDim2.new(0.18583, 0, 0.34324, 0);
+G2L["a4"]["Position"] = UDim2.new(0.81146, 0, 0.69906, 0);
+G2L["a4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a4"]["Name"] = [[SAB]];
+
+
+-- StarterGui.gui.SAB.drag
+G2L["a5"] = Instance.new("LocalScript", G2L["a4"]);
+G2L["a5"]["Name"] = [[drag]];
+
+
+-- StarterGui.gui.SAB.UICorner
+G2L["a6"] = Instance.new("UICorner", G2L["a4"]);
+
+
+
+-- StarterGui.gui.SAB.UIGradient
+G2L["a7"] = Instance.new("UIGradient", G2L["a4"]);
+G2L["a7"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(35, 0, 41)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(10, 0, 23))};
+
+
+-- StarterGui.gui.SAB.UIStroke
+G2L["a8"] = Instance.new("UIStroke", G2L["a4"]);
+G2L["a8"]["Thickness"] = 0.9;
+G2L["a8"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.gui.SAB.UIStroke.UIGradient
+G2L["a9"] = Instance.new("UIGradient", G2L["a8"]);
+G2L["a9"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(218, 0, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 124, 255))};
+
+
+-- StarterGui.gui.SAB.Header
+G2L["aa"] = Instance.new("Frame", G2L["a4"]);
+G2L["aa"]["ZIndex"] = 2;
+G2L["aa"]["BorderSizePixel"] = 0;
+G2L["aa"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["aa"]["Size"] = UDim2.new(1, 0, 0.19264, 0);
+G2L["aa"]["Position"] = UDim2.new(0, 0, 0, 0);
+G2L["aa"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["aa"]["Name"] = [[Header]];
+
+
+-- StarterGui.gui.SAB.Header.Title
+G2L["ab"] = Instance.new("TextLabel", G2L["aa"]);
+G2L["ab"]["TextWrapped"] = true;
+G2L["ab"]["BorderSizePixel"] = 0;
+G2L["ab"]["TextSize"] = 14;
+G2L["ab"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["ab"]["TextScaled"] = true;
+G2L["ab"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ab"]["TextDirection"] = Enum.TextDirection.RightToLeft;
+G2L["ab"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["ab"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ab"]["BackgroundTransparency"] = 1;
+G2L["ab"]["Size"] = UDim2.new(1, 0, 0.81466, 0);
+G2L["ab"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["ab"]["Text"] = [[Steal a Brainrot shi]];
+G2L["ab"]["Name"] = [[Title]];
+G2L["ab"]["Position"] = UDim2.new(0, 0, 0.07297, 0);
+
+
+-- StarterGui.gui.SAB.Header.Title.UIPadding
+G2L["ac"] = Instance.new("UIPadding", G2L["ab"]);
+G2L["ac"]["PaddingTop"] = UDim.new(0, 1);
+G2L["ac"]["PaddingRight"] = UDim.new(0, 3);
+G2L["ac"]["PaddingLeft"] = UDim.new(0, 3);
+G2L["ac"]["PaddingBottom"] = UDim.new(0, 1);
+
+
+-- StarterGui.gui.SAB.Header.Title.UICorner
+G2L["ad"] = Instance.new("UICorner", G2L["ab"]);
+
+
+
+-- StarterGui.gui.SAB.Header.UICorner
+G2L["ae"] = Instance.new("UICorner", G2L["aa"]);
+
+
+
+-- StarterGui.gui.SAB.Header.UIGradient
+G2L["af"] = Instance.new("UIGradient", G2L["aa"]);
+G2L["af"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(54, 0, 63)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(10, 0, 23))};
+
+
+-- StarterGui.gui.SAB.Check
+G2L["b0"] = Instance.new("Frame", G2L["a4"]);
+G2L["b0"]["BorderSizePixel"] = 0;
+G2L["b0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b0"]["Size"] = UDim2.new(0.92593, 0, 0.20991, 0);
+G2L["b0"]["Position"] = UDim2.new(0.03542, 0, 0.23777, 0);
+G2L["b0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b0"]["Name"] = [[Check]];
+
+
+-- StarterGui.gui.SAB.Check.UIGradient
+G2L["b1"] = Instance.new("UIGradient", G2L["b0"]);
+G2L["b1"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(82, 0, 96)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(40, 0, 103))};
+
+
+-- StarterGui.gui.SAB.Check.UICorner
+G2L["b2"] = Instance.new("UICorner", G2L["b0"]);
+
+
+
+-- StarterGui.gui.SAB.Check.SubText
+G2L["b3"] = Instance.new("TextLabel", G2L["b0"]);
+G2L["b3"]["TextWrapped"] = true;
+G2L["b3"]["BorderSizePixel"] = 0;
+G2L["b3"]["TextSize"] = 14;
+G2L["b3"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["b3"]["TextTransparency"] = 0.85;
+G2L["b3"]["TextScaled"] = true;
+G2L["b3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b3"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["b3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b3"]["BackgroundTransparency"] = 1;
+G2L["b3"]["Size"] = UDim2.new(0.73205, 0, 0.48572, 0);
+G2L["b3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b3"]["Text"] = [[Tracer on best brainrot in lobby]];
+G2L["b3"]["Name"] = [[SubText]];
+G2L["b3"]["Position"] = UDim2.new(0.004, 0, 0.50738, 0);
+
+
+-- StarterGui.gui.SAB.Check.SubText.UIPadding
+G2L["b4"] = Instance.new("UIPadding", G2L["b3"]);
+G2L["b4"]["PaddingTop"] = UDim.new(0, 2);
+G2L["b4"]["PaddingRight"] = UDim.new(0, 2);
+G2L["b4"]["PaddingLeft"] = UDim.new(0, 2);
+G2L["b4"]["PaddingBottom"] = UDim.new(0, 2);
+
+
+-- StarterGui.gui.SAB.Check.Title
+G2L["b5"] = Instance.new("TextLabel", G2L["b0"]);
+G2L["b5"]["TextWrapped"] = true;
+G2L["b5"]["BorderSizePixel"] = 0;
+G2L["b5"]["TextSize"] = 14;
+G2L["b5"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["b5"]["TextScaled"] = true;
+G2L["b5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b5"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["b5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b5"]["BackgroundTransparency"] = 1;
+G2L["b5"]["Size"] = UDim2.new(0.65882, 0, 0.67308, 0);
+G2L["b5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b5"]["Text"] = [[Check Best]];
+G2L["b5"]["Name"] = [[Title]];
+G2L["b5"]["Position"] = UDim2.new(0.008, 0, -0.00911, 0);
+
+
+-- StarterGui.gui.SAB.Check.Title.UIPadding
+G2L["b6"] = Instance.new("UIPadding", G2L["b5"]);
+G2L["b6"]["PaddingTop"] = UDim.new(0, 4);
+G2L["b6"]["PaddingRight"] = UDim.new(0, 4);
+G2L["b6"]["PaddingLeft"] = UDim.new(0, 2);
+G2L["b6"]["PaddingBottom"] = UDim.new(0, 4);
+
+
+-- StarterGui.gui.SAB.Check.Button
+G2L["b7"] = Instance.new("TextButton", G2L["b0"]);
+G2L["b7"]["Active"] = false;
+G2L["b7"]["BorderSizePixel"] = 0;
+G2L["b7"]["TextTransparency"] = 1;
+G2L["b7"]["BackgroundColor3"] = Color3.fromRGB(213, 0, 255);
+G2L["b7"]["Selectable"] = false;
+G2L["b7"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["b7"]["Size"] = UDim2.new(0.22339, 0, 0.57284, 0);
+G2L["b7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b7"]["Name"] = [[Button]];
+G2L["b7"]["Position"] = UDim2.new(0.84774, 0, 0.4923, 0);
+
+-- Tags
+CollectionService:AddTag(G2L["b7"], [[Switch_Thing]]);
+
+-- StarterGui.gui.SAB.Check.Button.UICorner
+G2L["b8"] = Instance.new("UICorner", G2L["b7"]);
+G2L["b8"]["CornerRadius"] = UDim.new(0, 2000);
+
+
+-- StarterGui.gui.SAB.Check.Button.UIStroke
+G2L["b9"] = Instance.new("UIStroke", G2L["b7"]);
+G2L["b9"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["b9"]["Thickness"] = 0.9;
+G2L["b9"]["Color"] = Color3.fromRGB(218, 0, 255);
+
+
+-- StarterGui.gui.SAB.UIAspectRatioConstraint
+G2L["ba"] = Instance.new("UIAspectRatioConstraint", G2L["a4"]);
+G2L["ba"]["AspectRatio"] = 1.15;
+
+
+-- StarterGui.gui.SAB.On
+G2L["bb"] = Instance.new("BoolValue", G2L["a4"]);
+G2L["bb"]["Name"] = [[On]];
+G2L["bb"]["Value"] = true;
+
+
 -- StarterGui.gui.drag
 local function C_2()
 local script = G2L["2"];
@@ -2143,12 +2345,14 @@ local script = G2L["9e"];
 	local tw = game:GetService("TweenService")
 	
 	local is_on = script.Parent.Main.ScrollingFrame.PlayerEsp.ON
-	
+	local highest_bwainwot_pos = nil
 	local gradient = script.Parent.line_gradient
+	
+	local bwainwor_button = script.Parent.SAB.Check.Button
 	
 	local targets = {}
 	
-	local function line_frame(line, part, delta)
+	local function line_frame(line, part, delta, gradii)
 		local origin3d, onscreen = camera:WorldToViewportPoint(part.Position)
 		local origin = Vector2.new(origin3d.X, origin3d.Y)
 		local mouse = uis:GetMouseLocation()
@@ -2176,8 +2380,12 @@ local script = G2L["9e"];
 			targets[part] = line
 		end
 		
-		local grad = gradient:Clone()
-		grad.Parent = line
+		if gradii == true then
+			local grad = gradient:Clone()
+			grad.Parent = line
+		else
+			line.BackgroundColor3 = Color3.new(1, 1, 1)
+		end
 		
 		local position = (origin + destination) / 2
 		local rotation = math.deg(math.atan2(destination.Y - origin.Y, destination.X - origin.X))
@@ -2213,12 +2421,186 @@ local script = G2L["9e"];
 					targets[hrp] = nil
 					if line then line:Destroy() end
 				else
-					line_frame(line, hrp, delta)
+					line_frame(line, hrp, delta, true)
 				end 
+			end
+		end
+		
+		if highest_bwainwot_pos ~= nil then
+			local line = targets[highest_bwainwot_pos]
+			line_frame(line, highest_bwainwot_pos, delta, false)
+		end
+	end)
+	
+	-- brainrot pos
+	local plots
+	
+	local player = game.Players.LocalPlayer
+	local character = player.Character
+	
+	local tween = game:GetService("TweenService")
+	
+	function parseString(moneyStr)
+		local cleanStr = moneyStr:gsub("[/$]", ""):gsub("/s", "")
+		local num, suffix = cleanStr:match("([%d%.]+)([KMB]?)")
+		num = tonumber(num)
+		if not num then return nil end
+		if suffix == "K" then
+			num = num * 1e3
+		elseif suffix == "M" then
+			num = num * 1e6
+		elseif suffix == "B" then
+			num = num * 1e9
+		end
+	
+		return num
+	end
+	
+	local function check_Rarest()
+		plots = game.workspace.Plots
+		
+		local highest_generation = -math.huge
+		local highests_name = nil
+		local highest_spawn = nil
+	
+		local raw_highest_gen = nil
+	
+		local br_folder
+	
+		for i, brainrots in pairs(plots:GetChildren()) do
+	
+			local AnimalPodiums = brainrots.AnimalPodiums
+			for i, another_loop in AnimalPodiums:GetChildren() do
+	
+				local att = another_loop.Base.Spawn:FindFirstChild("Attachment")
+	
+				if att and att:FindFirstChild("AnimalOverhead") then
+	
+					local overhead = att.AnimalOverhead
+					local generation = parseString(overhead.Generation.Text)
+					local name = overhead.DisplayName.Text
+					local spwn = att.Parent
+	
+	
+					if generation and name then
+						-- 🧠 Track the highest rarity
+						if generation > highest_generation then
+							highest_generation = generation
+							highest_spawn = spwn
+							highests_name = name
+							br_folder = brainrots
+	
+							raw_highest_gen = overhead.Generation.Text
+						end
+					end
+				end
+			end
+		end
+		if highest_generation then
+			return raw_highest_gen, highests_name, highest_spawn
+		end
+	end
+	
+	local function doshit()
+		local gen, nam, spwn = check_Rarest()
+	
+		plots = game.workspace.Plots
+		
+		for i, brainrots in pairs(plots:GetChildren()) do
+	
+			local AnimalPodiums = brainrots.AnimalPodiums
+			for i, another_loop in AnimalPodiums:GetChildren() do
+				local brainrot_model = brainrots:FindFirstChild(nam)
+	
+				if brainrot_model then
+					local prompt = another_loop.Base.Spawn.PromptAttachment
+	
+					for i, prompts in another_loop.Base.Spawn.PromptAttachment:GetChildren() do
+						if prompts.ActionText == "Steal" and prompts.ObjectText == nam then
+							--character:moveTo(another_loop.Base.Spawn.Position)
+							--    tween:Create(character.HumanoidRootPart, TweenInfo.new(0.5), {Position = another_loop.Base.Spawn.Position}):Play()
+							--    task.wait(0.1)
+	
+							--    fireproximityprompt(prompts)
+							highest_bwainwot_pos = spwn
+	
+							local example_notifs = player.PlayerGui.Notification.Notification.Template
+							local sfxs = game:GetService("ReplicatedStorage").Sounds.Sfx
+	
+							local new_notif = example_notifs:Clone()
+							new_notif.Parent = player.PlayerGui.Notification.Notification
+							new_notif.Name = "creds to PaZtV"
+							new_notif.Visible = true
+							new_notif.Text = "Rarest brainrot: ".. nam .. " ".. gen ..""
+	
+							sfxs.Success:Play()
+	
+							task.wait(3)
+							
+							for part, line in pairs(targets) do
+								if line == targets[highest_bwainwot_pos] then
+									print("a")
+									targets[part] = nil
+									line:Destroy()
+								else
+									print("b")
+								end
+							end
+							
+							highest_bwainwot_pos = nil
+							new_notif:Destroy()
+						end
+					end
+				end
+			end
+		end
+	
+	end
+	
+	bwainwor_button.MouseButton1Up:Connect(function()
+		doshit()
+	end)
+end;
+task.spawn(C_9e);
+-- StarterGui.gui.SAB.drag
+local function C_a5()
+local script = G2L["a5"];
+	local UIS = game:GetService('UserInputService')
+	local header = script.Parent.Header
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.02
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	header.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
 			end
 		end
 	end)
 end;
-task.spawn(C_9e);
+task.spawn(C_a5);
 
 return G2L["1"], require;
