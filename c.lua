@@ -216,7 +216,6 @@ G2L["1b"] = Instance.new("ScrollingFrame", G2L["a"]);
 G2L["1b"]["Active"] = true;
 G2L["1b"]["BorderSizePixel"] = 0;
 G2L["1b"]["CanvasSize"] = UDim2.new(0, 0, 1.25, 0);
-G2L["1b"]["CanvasPosition"] = Vector2.new(0, 100.52539);
 G2L["1b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["1b"]["HorizontalScrollBarInset"] = Enum.ScrollBarInset.ScrollBar;
 G2L["1b"]["Size"] = UDim2.new(0.96298, 0, 0.83633, 0);
@@ -2152,7 +2151,7 @@ local script = G2L["9"];
 		local br_folder
 	
 		for i, brainrots in pairs(plots:GetChildren()) do
-	
+			
 			local AnimalPodiums = brainrots.AnimalPodiums
 			for i, another_loop in AnimalPodiums:GetChildren() do
 	
@@ -2186,6 +2185,7 @@ local script = G2L["9"];
 	end
 	
 	local function doshit()
+		print("yeah")
 		local gen, nam, spwn = check_Rarest()
 	
 		plots = game.workspace.Plots
@@ -2242,6 +2242,11 @@ local script = G2L["9"];
 	end
 	
 	bwainwor_button.MouseButton1Up:Connect(function()
+		doshit()
+	end)
+	
+	game.Players.PlayerAdded:Connect(function()
+		task.wait(0.8)
 		doshit()
 	end)
 end;
