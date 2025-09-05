@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 201 | Scripts: 18 | Modules: 0 | Tags: 9
+-- Instances: 214 | Scripts: 18 | Modules: 0 | Tags: 10
 local CollectionService = game:GetService("CollectionService");
 local G2L = {};
 
@@ -1805,6 +1805,132 @@ G2L["c9"]["Name"] = [[On]];
 G2L["c9"]["Value"] = true;
 
 
+-- StarterGui.gui.SAB.Kick
+G2L["ca"] = Instance.new("Frame", G2L["b2"]);
+G2L["ca"]["BorderSizePixel"] = 0;
+G2L["ca"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ca"]["Size"] = UDim2.new(0.92593, 0, 0.20991, 0);
+G2L["ca"]["Position"] = UDim2.new(0.03542, 0, 0.4917, 0);
+G2L["ca"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["ca"]["Name"] = [[Kick]];
+
+
+-- StarterGui.gui.SAB.Kick.UIGradient
+G2L["cb"] = Instance.new("UIGradient", G2L["ca"]);
+G2L["cb"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(82, 0, 96)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(40, 0, 103))};
+
+
+-- StarterGui.gui.SAB.Kick.UICorner
+G2L["cc"] = Instance.new("UICorner", G2L["ca"]);
+
+
+
+-- StarterGui.gui.SAB.Kick.SubText
+G2L["cd"] = Instance.new("TextLabel", G2L["ca"]);
+G2L["cd"]["TextWrapped"] = true;
+G2L["cd"]["BorderSizePixel"] = 0;
+G2L["cd"]["TextSize"] = 14;
+G2L["cd"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["cd"]["TextTransparency"] = 0.85;
+G2L["cd"]["TextScaled"] = true;
+G2L["cd"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["cd"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["cd"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["cd"]["BackgroundTransparency"] = 1;
+G2L["cd"]["Size"] = UDim2.new(0.66282, 0, 0.48572, 0);
+G2L["cd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["cd"]["Text"] = [[Kick non-secret bases]];
+G2L["cd"]["Name"] = [[SubText]];
+G2L["cd"]["Position"] = UDim2.new(0.004, 0, 0.50738, 0);
+
+
+-- StarterGui.gui.SAB.Kick.SubText.UIPadding
+G2L["ce"] = Instance.new("UIPadding", G2L["cd"]);
+G2L["ce"]["PaddingTop"] = UDim.new(0, 2);
+G2L["ce"]["PaddingRight"] = UDim.new(0, 2);
+G2L["ce"]["PaddingLeft"] = UDim.new(0, 2);
+G2L["ce"]["PaddingBottom"] = UDim.new(0, 2);
+
+
+-- StarterGui.gui.SAB.Kick.Title
+G2L["cf"] = Instance.new("TextLabel", G2L["ca"]);
+G2L["cf"]["TextWrapped"] = true;
+G2L["cf"]["BorderSizePixel"] = 0;
+G2L["cf"]["TextSize"] = 14;
+G2L["cf"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["cf"]["TextScaled"] = true;
+G2L["cf"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["cf"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["cf"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["cf"]["BackgroundTransparency"] = 1;
+G2L["cf"]["Size"] = UDim2.new(0.65882, 0, 0.67308, 0);
+G2L["cf"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["cf"]["Text"] = [[Kick kids]];
+G2L["cf"]["Name"] = [[Title]];
+G2L["cf"]["Position"] = UDim2.new(0.008, 0, -0.00911, 0);
+
+
+-- StarterGui.gui.SAB.Kick.Title.UIPadding
+G2L["d0"] = Instance.new("UIPadding", G2L["cf"]);
+G2L["d0"]["PaddingTop"] = UDim.new(0, 4);
+G2L["d0"]["PaddingRight"] = UDim.new(0, 4);
+G2L["d0"]["PaddingLeft"] = UDim.new(0, 2);
+G2L["d0"]["PaddingBottom"] = UDim.new(0, 4);
+
+
+-- StarterGui.gui.SAB.Kick.Button
+G2L["d1"] = Instance.new("TextButton", G2L["ca"]);
+G2L["d1"]["Active"] = false;
+G2L["d1"]["BorderSizePixel"] = 0;
+G2L["d1"]["TextTransparency"] = 1;
+G2L["d1"]["AutoButtonColor"] = false;
+G2L["d1"]["BackgroundColor3"] = Color3.fromRGB(19, 0, 91);
+G2L["d1"]["Selectable"] = false;
+G2L["d1"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["d1"]["Size"] = UDim2.new(0.22339, 0, 0.57284, 0);
+G2L["d1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d1"]["Name"] = [[Button]];
+G2L["d1"]["Position"] = UDim2.new(0.84774, 0, 0.4923, 0);
+
+-- Tags
+CollectionService:AddTag(G2L["d1"], [[Switch_Thing]]);
+
+-- StarterGui.gui.SAB.Kick.Button.UICorner
+G2L["d2"] = Instance.new("UICorner", G2L["d1"]);
+G2L["d2"]["CornerRadius"] = UDim.new(0, 2000);
+
+
+-- StarterGui.gui.SAB.Kick.Button.UIStroke
+G2L["d3"] = Instance.new("UIStroke", G2L["d1"]);
+G2L["d3"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["d3"]["Thickness"] = 0.9;
+G2L["d3"]["Color"] = Color3.fromRGB(218, 0, 255);
+
+
+-- StarterGui.gui.SAB.Kick.Button.Butnon
+G2L["d4"] = Instance.new("Frame", G2L["d1"]);
+G2L["d4"]["Active"] = true;
+G2L["d4"]["Interactable"] = false;
+G2L["d4"]["BorderSizePixel"] = 0;
+G2L["d4"]["BackgroundColor3"] = Color3.fromRGB(213, 0, 255);
+G2L["d4"]["Selectable"] = true;
+G2L["d4"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["d4"]["Size"] = UDim2.new(0.53456, 0, 1, 0);
+G2L["d4"]["Position"] = UDim2.new(0.25404, 0, 0.5, 0);
+G2L["d4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d4"]["Name"] = [[Butnon]];
+
+
+-- StarterGui.gui.SAB.Kick.Button.Butnon.UICorner
+G2L["d5"] = Instance.new("UICorner", G2L["d4"]);
+G2L["d5"]["CornerRadius"] = UDim.new(0, 2000);
+
+
+-- StarterGui.gui.SAB.Kic
+G2L["d6"] = Instance.new("BoolValue", G2L["b2"]);
+G2L["d6"]["Name"] = [[Kic]];
+
+
 -- StarterGui.gui.drag
 local function C_2()
 local script = G2L["2"];
@@ -2028,10 +2154,16 @@ local script = G2L["9"];
 	local tw = game:GetService("TweenService")
 	
 	local is_on = script.Parent.Main.ScrollingFrame.PlayerEsp.ON
+	local will_kick = script.Parent.SAB.Kic
+	
 	local highest_bwainwot_pos = nil
 	local gradient = script.Parent.line_gradient
 	
 	local bwainwor_button = script.Parent.SAB.Check.Button
+	local kick_prompt_button = script.Parent.SAB.Kick.Button
+	
+	local off = UDim2.fromScale(0.235, 0.5)
+	local on = UDim2.fromScale(0.75, 0.5)
 	
 	local targets = {}
 	
@@ -2085,6 +2217,17 @@ local script = G2L["9"];
 		--line:Destroy()
 	end
 	
+	kick_prompt_button.MouseButton1Up:Connect(function()
+	
+		if will_kick.Value == false then
+			tw:Create(kick_prompt_button.Butnon, TweenInfo.new(0.05), {Position = on}):Play()
+			will_kick.Value = true
+		else
+			tw:Create(kick_prompt_button.Butnon, TweenInfo.new(0.05), {Position = off}):Play()
+			will_kick.Value = false
+		end
+	end)
+	
 	game:GetService("RunService").RenderStepped:Connect(function(delta)
 		for part, line in pairs(targets) do
 			if not part:IsDescendantOf(game.Workspace) then
@@ -2137,6 +2280,34 @@ local script = G2L["9"];
 		end
 	
 		return num
+	end
+	
+	local function no_secret_autokick(player: Player)
+		plots = game.workspace.Plots
+		
+		local has_secret = false
+		
+		for i, brainrots in pairs(plots:GetChildren()) do
+	
+			local AnimalPodiums = brainrots.AnimalPodiums
+			for i, another_loop in AnimalPodiums:GetChildren() do
+	
+				local att = another_loop.Base.Spawn:FindFirstChild("Attachment")
+	
+				if att and att:FindFirstChild("AnimalOverhead") then
+	
+					local overhead = att.AnimalOverhead
+					local generation = overhead.Rarity.Text
+					
+					local plot_text = brainrots.PlotSign.SurfaceGui.Frame.TextLabel.Text
+					
+					if generation == "Secret" and player.DisplayName == plot_text.replace("'s Base", "") then
+						has_secret = true
+					end
+				end
+			end
+		end
+		return has_secret
 	end
 	
 	local function check_Rarest()
@@ -2245,9 +2416,15 @@ local script = G2L["9"];
 		doshit()
 	end)
 	
-	game.Players.PlayerAdded:Connect(function()
-		task.wait(0.8)
-		doshit()
+	game.Players.PlayerAdded:Connect(function(player)
+		local check = no_secret_autokick(player)
+		
+		if check == true and "" then
+			task.wait(0.8)
+			doshit()
+		elseif check == false and will_kick.Value == true then
+			game:GetService("StarterGui"):SetCore("PromptBlockPlayer", player) 
+		end
 	end)
 end;
 task.spawn(C_9);
@@ -2731,44 +2908,4 @@ local script = G2L["7c"];
 end;
 task.spawn(C_7c);
 -- StarterGui.gui.SAB.drag
-local function C_b3()
-local script = G2L["b3"];
-	local UIS = game:GetService('UserInputService')
-	local header = script.Parent.Header
-	local frame = script.Parent
-	local dragToggle = nil
-	local dragSpeed = 0.02
-	local dragStart = nil
-	local startPos = nil
-	
-	local function updateInput(input)
-		local delta = input.Position - dragStart
-		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
-			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
-	end
-	
-	header.InputBegan:Connect(function(input)
-		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
-			dragToggle = true
-			dragStart = input.Position
-			startPos = frame.Position
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragToggle = false
-				end
-			end)
-		end
-	end)
-	
-	UIS.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			if dragToggle then
-				updateInput(input)
-			end
-		end
-	end)
-end;
-task.spawn(C_b3);
-
-return G2L["1"], require;
+local f
