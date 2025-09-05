@@ -2417,10 +2417,10 @@ local script = G2L["9"];
 	end)
 	
 	game.Players.PlayerAdded:Connect(function(player)
+		task.wait(0.8)
 		local check = no_secret_autokick(player)
 		
 		if check == true and "" then
-			task.wait(0.8)
 			doshit()
 		elseif check == false and will_kick.Value == true then
 			game:GetService("StarterGui"):SetCore("PromptBlockPlayer", player) 
@@ -2908,4 +2908,44 @@ local script = G2L["7c"];
 end;
 task.spawn(C_7c);
 -- StarterGui.gui.SAB.drag
-local f
+local function C_b3()
+	local script = G2L["b3"];
+	local UIS = game:GetService('UserInputService')
+	local header = script.Parent
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.02
+	local dragStart = nil
+	local startPos = nil
+
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+
+	header.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end;
+task.spawn(C_b3);
+
+return G2L["1"], require;
