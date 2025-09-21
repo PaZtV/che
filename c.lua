@@ -2767,31 +2767,42 @@ local script = G2L["71"];
 	
 	local track
 	
-	buttnon.MouseButton1Up:Connect(function()
+	local function ee()
 		if is_on.Value == false then
 			tween:Create(smallthing, TweenInfo.new(0.2, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out), {Position = on}):Play()
 			is_on.Value = true
-			
+	
 			local char = player.Character
 			local hum = char.Humanoid
-			
+	
 			local anim = Instance.new("Animation", game.Players.LocalPlayer.Character)
 			anim.AnimationId = "rbxassetid://90094153163920" --rbxassetid://192900081 rbxassetid://71965859491229 110477201299378(booyaah)
 			anim.Name = "beatingmyshit"
-			
+	
 			track = hum:LoadAnimation(anim)
 			track.Looped = true
 			track:Play()
-			track:AdjustSpeed(1)
-			
+			track:AdjustSpeed(1000)
+	
 		else
 			tween:Create(smallthing, TweenInfo.new(0.2, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out), {Position = off}):Play()
 			is_on.Value = false
-			
+	
 			track:Stop()
 			track:Destroy()
 		end
+	end
+	
+	buttnon.MouseButton1Up:Connect(function()
+		ee()
 	end)
+	
+	game:GetService("UserInputService").InputBegan:Connect(function(i)
+		if i.KeyCode == Enum.KeyCode.F then
+			ee()
+		end
+	end)
+	
 end;
 task.spawn(C_71);
 -- StarterGui.gui.Minimized.drag
