@@ -2782,7 +2782,7 @@ local script = G2L["71"];
 			track = hum:LoadAnimation(anim)
 			track.Looped = true
 			track:Play()
-			track:AdjustSpeed(1000)
+			track:AdjustSpeed(1)
 			
 		else
 			tween:Create(smallthing, TweenInfo.new(0.2, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out), {Position = off}):Play()
